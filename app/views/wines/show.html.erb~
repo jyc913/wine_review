@@ -1,6 +1,6 @@
 <article class="wine">
   <header>
-    <h2><%= @wine.name %></h2>
+   # <h2><%= @wine.name %></h2>
   </header>
   <p><label>Author:</label> <%= @wine.name %></p>
   <p><label>Pages:</label> <%= number_with_delimiter(@wine.year) %></p>

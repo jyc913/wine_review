@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get '/wines/index'
 
-  get '/wines/show'
+  #get '/wines/index'
+
+  #get '/wines/show'
 
 get "/wines" => "wines#index", as: 'wines'
+get "/wines/:id" => "wines#show", as: 'wine'
 
 #resources : wines
 
