@@ -1,10 +1,14 @@
 <article class="wine">
   <header>
-   # <h2><%= @wine.name %></h2>
+    <h2><%= @wine.name %></h2>
   </header>
   <p><label>Author:</label> <%= @wine.name %></p>
-  <p><label>Pages:</label> <%= number_with_delimiter(@wine.year) %></p>
+  <p><label>Pages:</label> <%= @wine.year %></p>
   <p><label>Price:</label> <%= @wine.winery %></p>
 </article>
 
 <%= link_to 'All Wines', wines_path %>
+| <%= link_to 'Edit', edit_wine_path(@wine) %>
+<%= button_to 'Delete', @book,
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
