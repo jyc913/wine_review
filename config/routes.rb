@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :log_entries
 resources :wines do
-    get 'page/:page', :action => :index, :on => :collection
+  resources :log_entries
+  get 'page/:page', :action => :index, :on => :collection
 end
 root 'wines#index'
-
 
 
 

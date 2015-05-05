@@ -4,9 +4,6 @@ before_action :set_wine, only: [ :show, :edit, :update, :destroy]
 	  @wines = Wine.order(:name).page(params[:page])
 	end
 
-
-
-
 	def show
 	end
 
