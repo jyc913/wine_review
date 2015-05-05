@@ -45,5 +45,6 @@ group :development, :test do
   gem 'autoprefixer-rails'
   gem 'kaminari'
   gem 'kaminari-bootstrap', '~> 3.0.1'
+  gem 'powerpack'
 end
 

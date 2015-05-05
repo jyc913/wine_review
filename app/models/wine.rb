@@ -7,7 +7,12 @@ class Wine < ActiveRecord::Base
 	   unless: "year.blank?"
 
 	def average_ratings
-	  log_entries.average(:rating)
+	  #log_entries.average(:rating)
+	 if log_entries.loaded?
+		log_entries.map(&:rating).compact.average
+	  else
+		log_entries.average(:rating)
+	  end
 	end
 
 end
