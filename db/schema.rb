@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20150505145447) do
 
   add_index "log_entries", ["wine_id"], name: "index_log_entries_on_wine_id"
 
-  create_table "wines", force: :cascade do |t|c
+  create_table "wines", force: :cascade do |t|
     t.string   "name"
     t.integer  "year"
     t.string   "winery"
