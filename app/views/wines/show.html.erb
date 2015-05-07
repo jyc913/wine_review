@@ -3,9 +3,10 @@
   <header>
     <h2><%= @wine.name %></h2>
   </header>
-  <p><label>Author:</label> <%= @wine.name %></p>
-  <p><label>Pages:</label> <%= @wine.year %></p>
-  <p><label>Price:</label> <%= @wine.winery %></p>
+  <p><label>Year:</label> <%= @wine.year %></p>
+  <p><label>winery:</label> <%= @wine.winery %></p>
+  <p><label>country:</label> <%= @wine.name %></p>
+  <p><label>varietal:</label> <%= @wine.varietal %></p>
   <p><label>Average log entries:</label> <%= format_average_ratings(@wine) %></p>
 </article>
 
